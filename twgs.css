@@ -1,0 +1,22 @@
+body {
+  width: 100%;
+  text-align: center;
+  background: #D3D3D3;
+  background: url('bg2.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.logo {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.center-content {
+  max-width: 860px;
+  text-align: left;
+  display: inline-block;
+}
+
