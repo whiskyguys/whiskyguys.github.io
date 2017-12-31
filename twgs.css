@@ -17,15 +17,17 @@ p {
 }
 
 a:link {
-    color: #999;
+    color: #CCC;
+    text-decoration: none;
 }
 
 a:visited {
-    color: #777;
+    color: #AAA;
 }
 
 a:hover, a:active {
-    color: #888;
+    color: #BBB;
+    text-decoration: underline;
 }
 
 .logo {
@@ -36,16 +38,46 @@ a:hover, a:active {
 .center-content {
   padding-left: 10px;
   padding-right: 10px;
-  max-width: 860px;
+  max-width: 960px;
   width: 90%;
   text-align: left;
   display: inline-block;
+}
+
+.main-and-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-and-right .main-content {
+  flex: 1;
+}
+
+.main-and-right .right-content {
+  padding-left: 30px;
+  padding-top: 29px;
+  flex: 0 0 10em;
+}
+
+.instagram-title {
+  font-size: 18px;
+  padding-bottom: 10px;
 }
 
 /* Small screens */
 @media all and (max-width: 970px) {  
   .center-content {
     max-width: 750px;
+  }
+}
+
+@media all and (max-width: 779px) {  
+  .main-and-right {
+    flex-direction: column;
+  }
+  
+  .main-and-right .right-content {
+    padding-left: 0;
   }
 }
 
