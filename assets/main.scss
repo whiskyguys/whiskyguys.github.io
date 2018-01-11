@@ -1,9 +1,16 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+
 body {
   margin: 0;
   width: 100%;
-  text-align: center;
+  text-align: justify;
   background: #000000;
-  background: url('IMG_3088.JPG') no-repeat center center fixed #000000; 
+  background: url('bg.jpg') no-repeat center center fixed #000000; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -51,6 +58,9 @@ a:hover, a:active {
 
 .main-and-right .main-content {
   flex: 1;
+  h2 {
+    margin-top: 10px;
+  }
 }
 
 .main-and-right .right-content {
@@ -60,8 +70,15 @@ a:hover, a:active {
 }
 
 .instagram-title {
-  font-size: 18px;
+  font-size: 16px;
   padding-bottom: 10px;
+  img {
+    vertical-align: top;
+  }
+}
+
+#instagram img {
+  padding: 5px;
 }
 
 /* Small screens */
@@ -81,11 +98,6 @@ a:hover, a:active {
   }
 }
 
-.footer {
-  padding-top: 110px;
-  padding-bottom: 10px;
-}
-
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -99,4 +111,3 @@ a:hover, a:active {
   width: 100%;
   height: 100%;
 }
-

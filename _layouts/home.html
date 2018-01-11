@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div class="main-and-right">
+    <div class="main-content">
+      <h1>Welcome to the Whisky Time Show</h1>
+      <p>Hi, it's whisky time with Luke & Devin and this is our show about whisky. In each episode we try two different whiskies to see how they compare. For best enjoyment, we recommend drinking along with one or both of the featured whiskies. Or something else. It doesn’t really matter just drink something. If you’d like us to try anything specific, let us know or sponsor a show and we’ll do it.</p>
+
+      <p>If you like our show please subscribe to us on <span class="g-ytsubscribe" data-channelid="UCg_wvlxVgqe9dt2NHK7aKpg" data-layout="default" data-count="default"></span> or <a href="https://www.instagram.com/whiskytimeshow/">Instagram</a>.</p>
+  
+      <hr>
+      <h2>Blog Posts</h2>
+      <ul class="post-list">
+        {% for post in site.posts %}
+          <li>
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    
+      <hr>
+  
+      <h2>Review Videos</h2>
+      <p>Hit the little hamburger menu on the top left for the episode list.</p>
+      <div class="videoWrapper">
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLVacGutOLJRBuuK8uFG3os-PI78TwmGNg" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+    </div>
+    <div class="right-content">
+      <div class="instagram-title">
+        <img src="assets/instagram-glyph.png" alt="instagram"> <a href="https://www.instagram.com/whiskytimeshow/">WhiskyTimeShow</a>
+      </div>
+      <div id="instagram">
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<script type="text/javascript">
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: '4941452019',
+    accessToken: '4941452019.1677ed0.495fe550a4344983b9c172316588e4d6',
+    target: 'instagram',
+    limit: 8
+  });
+  window.onload = function() {
+    userFeed.run();
+  }
+</script>
