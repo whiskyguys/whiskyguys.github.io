@@ -18,7 +18,7 @@ author: Luke & Devin
 #email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Two regular guys drink and review whisky.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://whiskytimeshow.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: whiskytimeshow
 #github_username:  none
