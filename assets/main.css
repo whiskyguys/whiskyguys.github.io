@@ -216,6 +216,6 @@ a:hover, a:active { color: #BBB; text-decoration: underline; }
 @media all and (max-width: 970px) { .center-content { max-width: 750px; } }
 @media all and (max-width: 779px) { .main-and-right { flex-direction: column; }
   .main-and-right .right-content { padding-left: 0; } }
-.videoWrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0; }
+.videoWrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0; margin-bottom: 15px; }
 
 .videoWrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
