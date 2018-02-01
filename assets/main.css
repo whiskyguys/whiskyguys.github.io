@@ -101,7 +101,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .page-heading { font-size: 20px; }
 
-.post-list { margin-left: 0; list-style: none; }
+.post-list { text-align: left; margin-left: 0; list-style: none; }
 .post-list > li { margin-bottom: 14px; }
 
 .post-meta { font-size: 14px; color: #DDDDDD; }
