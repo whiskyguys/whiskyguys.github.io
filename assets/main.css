@@ -5,7 +5,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { m
 body { font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; color: #EEEEEE; background-color: black; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 7px; }
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 14px; }
 
 /** Images */
 img { max-width: 100%; vertical-align: middle; }
@@ -101,8 +101,9 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .page-heading { font-size: 20px; }
 
-.post-list { text-align: left; margin-left: 0; list-style: none; }
-.post-list > li { margin-bottom: 14px; }
+.post-list { text-align: left; margin-left: 0; list-style: none; display: grid; grid-template-columns: 112px auto; }
+.post-list .post-meta { margin-right: 15px; text-align: right; }
+.post-list > div { margin-bottom: 14px; }
 
 .post-meta { font-size: 14px; color: #DDDDDD; }
 
