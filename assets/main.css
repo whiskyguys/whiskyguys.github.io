@@ -204,7 +204,7 @@ a:hover, a:active { color: #BBB; text-decoration: underline; }
 .main-and-right { display: flex; flex-direction: row; }
 
 .main-and-right .main-content { flex: 1; }
-.main-and-right .main-content h2 { margin-top: 24px; text-align: center; }
+.main-and-right .main-content h2 { margin-top: 24px; margin-bottom: 0; text-align: center; }
 .main-and-right .main-content h4 { margin-top: 4px; margin-bottom: 2px; }
 
 .main-and-right .right-content { padding-left: 30px; padding-top: 29px; flex: 0 0 10em; }
